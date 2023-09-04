@@ -38,7 +38,7 @@ const Prediction: React.FC<Type> = (props) => {
   function AddressToPosition(address: string) {
     axios(`https://dapi.kakao.com/v2/local/search/address.json?query=${address}`, {
       headers: {
-        Authorization: `KakaoAK c85b256a8511aef9b314fd0ca4d0c635`
+        Authorization: `KakaoAK 40de5b9c824cadd2630051fc0c2ebedd`
       }
     })
       .then((res) => {
