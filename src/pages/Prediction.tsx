@@ -21,7 +21,7 @@ const Prediction: React.FC<Type> = (props) => {
   async function submit(e: React.MouseEvent<HTMLInputElement, MouseEvent> | React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (total_people === '' || isNaN(parseFloat(total_people))) return alert('Input Value Error')
-    await axios('http://54.180.126.168:5001/', {
+    await axios('//54.180.126.168:5001/', {
       method: 'POST',
       data: {
         latitude: position.lat.toFixed(5),
